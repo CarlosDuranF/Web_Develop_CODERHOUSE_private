@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTERVET</title>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <div class="header_logo">
+            <a href="index.html">
+                <h1>MASTERVET</h1>
+            </a>
+        </div>
+        <!-- Inicio icono accion abrir menu -->
+        <label for="menu" class="header_burguerMenu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <!-- Fin icono accion abrir menu -->
+        <!-- Inicio evento para abrir y cerrar menu -->
+        <input type="checkbox" id="menu">
+        <!-- Fin evento para abrir y cerrar menu -->
+        <nav class="header_menu">
+            <!-- Inicio icono accion cierre menu -->
+            <label for="menu" class="header_closeMenu">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </label>
+            <!-- Fin icono accion cierre menu -->
+            <ul>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Servicios</a></li>
+                <li id="header_menu--about"><a href="">Nosotros</a>
+                    <ul>
+                        <li><a href="">Comunidad</a></li>
+                        <li><a href="">Fundación</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="home_mainContainer">
+        <section class="home_bannerImg">
+            <img src="" alt="">
+            <h2>En servicio a nuestros amigos</h2>
+        </section>
+        <section class="home_infoImg">
+            <article class="info_category" id="category_img1">
+                <h3>Quienes somos</h3>
+            </article>
+            <article class="info_category" id="category_img2">
+                <h3>En toda Latino America</h3>
+            </article>
+            <article class="info_category" id="category_img3">
+                <h3>Proyecto</h3>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer_Info">
+            <section class="maps_location">
+                <h3>Nos encontramos acá</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13468.041109217598!2d-71.23041334387005!3d-32.44565967212221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1649211602688!5m2!1ses!2scl" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>  
+            <section class="footer_socialInfo-Movil">
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="" class="logoWp"><i class="fa-brands fa-whatsapp"></i></a></li>
+              </section>
+            <section class="footer_socialInfo">
+              <a href=""><i class="fa-brands fa-instagram"></i>MasterVet</a>
+              <a href=""><i class="fa-brands fa-facebook"></i>MasterVet</a>
+              <a href="" class="logoWp"><i class="fa-brands fa-whatsapp"></i>+56998765432</a>
+            </section>
+            <section class="footer_About">
+              <h3>MASTERVET</h3>
+              <p>MasterVet en paralelo a sus servicios pagados que ofrece, la fundación a nivel internacional es sin fines de lucro entregando mensualmente rendiciones financieras a sus socios respecto a los gastos de las donaciones, para saber más contactanos <a href="">aquí</a></p>
+            </section>
+          </div>
+    </footer>
+</body>
+</html>
