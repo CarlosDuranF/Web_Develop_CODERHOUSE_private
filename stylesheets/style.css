@@ -93,7 +93,7 @@ header .header_menu ul li {
 header #header_menu--about ul {
   flex-direction: column;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.0);
 }
 
 header #header_menu--about ul li a {
@@ -135,6 +135,7 @@ header #header_menu--about ul li a {
     left: 0;
     padding: 8px;
     height: 112px;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   header .header_logo {
