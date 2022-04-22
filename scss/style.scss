@@ -1,0 +1,337 @@
+$bg_color: #0c0d0c;
+$hv_color: #242625;
+
+/* INICIO FIX */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: $bg_color;
+}
+/* FIN FIX */
+
+/* INICIO HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    padding: 8px 16px;
+    z-index: 999;
+    .header_logo {
+        width: 48px;
+        h1 {
+            transition: all 0.1s ease-in-out; 
+        }
+        h1:hover {
+            color: $hv_color; 
+        }
+    }
+    .header_burguerMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 2rem;
+        background-color: $bg_color;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none; 
+    }
+    .header_menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.97);
+        .header_closeMenu {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            li {
+                text-transform: uppercase;
+                font-weight: 300;
+                border-radius: 5px;
+                padding: 0.5rem;
+            }
+        }
+    }
+    #header_menu--about {
+        ul {
+            flex-direction: column;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.0);
+            li {
+                a {
+                    text-transform: capitalize;
+                    font-weight: 400; 
+                }
+            }
+        }
+    }
+}
+
+input#menu {
+    display: none;
+}
+
+input#menu:checked ~ .header_menu {
+    display: block;
+}
+
+/* FIN HEADER */
+
+/* INICIO FOOTER */
+footer {
+    .footer_Info {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: black;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        grid-template-areas:
+          "location contact"
+          "social social";
+        .maps_location {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #0c0d0c;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-top: 0;
+            grid-area: location;
+            border-radius: 2px;
+            max-width: 320px; 
+            h3 {
+                padding-top: 5px;
+                padding-bottom: 5px; 
+            }
+        }
+        .footer_socialInfo-Movil {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 0;
+            margin: 0;
+            grid-area: social;
+            justify-content: space-evenly;
+            li {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                justify-content: center;
+                a {
+                   width: 48px;
+                   height: 48px;
+                   display: grid;
+                   align-content: center;
+                   justify-content: center;
+                   font-size: 30px;
+                   background-color: #242625;
+                   border-radius: 50px;
+                }
+            }
+        }
+        .footer_About {
+            display: flex;
+            flex-direction: column;
+            grid-area: contact;            
+            h3 {
+                text-align: center; 
+            }
+            p {
+                padding-top: 5px; 
+            }
+        }
+        .footer_socialInfo {
+            display: none;
+        }
+    }
+}
+/* FIN FOOTER */
+
+/* INICIO INDEX.HTML */
+.home_mainContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+    .home_bannerImg {
+        width: 100%;
+        height: 91vh;
+        background-image: url("../img/img1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            width: 100%;
+            font-size: 2rem;
+        }
+    }
+    .home_infoImg {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3";
+        padding-top: 20px;
+        padding-bottom: 20px;
+        gap: 5px;
+        .info_category {
+            width: 40%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            h3 {
+                display: flex;
+                padding: 50px;
+                justify-content: center;
+            }
+        }
+        .info_category#category_img1 {
+            background-image: url("../img/conversa_index.PNG");
+            grid-area: img1;
+        }
+        .info_category#category_img2 {
+            background-image: url("../img/rescate_index.jpg");
+            grid-area: img2;
+        }
+        .info_category#category_img3 {
+            background-image: url("../img/colab_index.jpg");
+            grid-area: img3;
+        }
+    }
+}
+/* FIN INDEX.HTML */
+
+/* INICIO MEDIA QUERY */
+@media screen and (min-width: 768px) {
+    header {
+
+        .header_burguerMenu {
+            display: none;
+        }
+
+        .header_menu {
+            .header_closeMenu {
+                display: none;
+            }
+            display: initial;
+            position: inherit;
+
+            ul {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            #header_menu--about {
+                position: relative;
+
+                ul {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    padding: 8px;
+                    height: 112px;
+                    background-color: rgba(0, 0, 0, 0.8); 
+                }
+            }
+
+            #header_menu--about:hover > ul {
+                display: flex;
+            }
+        }
+
+        .header_logo {
+            width: 200px; 
+        }
+    }
+
+    footer {
+        .footer_Info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            grid-template-areas:
+              "location social1 contact";
+            
+              .footer_socialInfo {
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                gap: 10px;
+                padding: 10px 0 10px 0;
+                /* margin: 10px; */
+                grid-area: social1;
+                justify-content: space-evenly;
+    
+                li {
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    justify-content: flex-start;
+                    align-items: center;
+    
+                    a {
+                        width: 48px;
+                        display: grid;
+                        align-content: center;
+                        justify-content: center;
+                        font-size: 30px; 
+                    }
+                }
+            }
+
+            .footer_socialInfo-Movil {
+                display: none;
+            }
+        }
+    }
+
+    .home_mainContainer {
+        .home_infoImg {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "img1 img2 img3";
+            .info_category {
+                width: 80%;
+                height: 200px;
+                border-radius: 2px;
+                h3 {
+                    padding: 80px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+/* FIN MEDIA QUERY */
