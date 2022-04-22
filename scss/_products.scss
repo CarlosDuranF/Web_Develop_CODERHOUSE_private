@@ -1,0 +1,10 @@
+.products_mainContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .products_contentContainer {
+
+    }
+}

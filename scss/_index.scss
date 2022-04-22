@@ -1,0 +1,58 @@
+/* INICIO INDEX.HTML */
+.home_mainContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+    .home_bannerImg {
+        width: 100%;
+        height: 91vh;
+        background-image: url("../img/img1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            width: 100%;
+            font-size: 2rem;
+        }
+    }
+    .home_infoImg {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3";
+        padding-top: 20px;
+        padding-bottom: 20px;
+        gap: 5px;
+        .info_category {
+            width: 40%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            h3 {
+                display: flex;
+                padding: 50px;
+                justify-content: center;
+            }
+        }
+        .info_category#category_img1 {
+            background-image: url("../img/conversa_index.PNG");
+            grid-area: img1;
+        }
+        .info_category#category_img2 {
+            background-image: url("../img/rescate_index.jpg");
+            grid-area: img2;
+        }
+        .info_category#category_img3 {
+            background-image: url("../img/colab_index.jpg");
+            grid-area: img3;
+        }
+    }
+}
+/* FIN INDEX.HTML */

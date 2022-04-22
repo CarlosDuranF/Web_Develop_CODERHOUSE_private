@@ -1,0 +1,101 @@
+/* INICIO MEDIA QUERY */
+@media screen and (min-width: 768px) {
+    header {
+
+        .header_burguerMenu {
+            display: none;
+        }
+
+        .header_menu {
+            .header_closeMenu {
+                display: none;
+            }
+            display: initial;
+            position: inherit;
+
+            ul {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            #header_menu--about {
+                position: relative;
+
+                ul {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    padding: 8px;
+                    height: 112px;
+                    background-color: rgba(0, 0, 0, 0.8); 
+                }
+            }
+
+            #header_menu--about:hover > ul {
+                display: flex;
+            }
+        }
+
+        .header_logo {
+            width: 200px; 
+        }
+    }
+
+    footer {
+        .footer_Info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            grid-template-areas:
+              "location social1 contact";
+            
+              .footer_socialInfo {
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                gap: 10px;
+                padding: 10px 0 10px 0;
+                /* margin: 10px; */
+                grid-area: social1;
+                justify-content: space-evenly;
+    
+                li {
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    justify-content: flex-start;
+                    align-items: center;
+    
+                    a {
+                        width: 48px;
+                        display: grid;
+                        align-content: center;
+                        justify-content: center;
+                        font-size: 30px; 
+                    }
+                }
+            }
+
+            .footer_socialInfo-Movil {
+                display: none;
+            }
+        }
+    }
+
+    .home_mainContainer {
+        .home_infoImg {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "img1 img2 img3";
+            .info_category {
+                width: 80%;
+                height: 200px;
+                border-radius: 2px;
+                h3 {
+                    padding: 80px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+/* FIN MEDIA QUERY */
