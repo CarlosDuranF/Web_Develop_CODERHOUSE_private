@@ -1,4 +1,17 @@
 /* INICIO MEDIA QUERY */
+@media screen and (max-width: 506px){
+    footer {
+        .footer_Info {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            grid-template-areas:
+              "contact"
+              "location"
+              "social";
+        }
+    }        
+}
+
 @media screen and (min-width: 768px) {
     header {
 
@@ -84,6 +97,7 @@
     .home_mainContainer {
         .home_infoImg {
             grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
             grid-template-areas: 
             "img1 img2 img3";
             .info_category {
@@ -94,6 +108,41 @@
                     padding: 80px;
                     text-align: center;
                 }
+            }
+        }
+    }
+
+    .products_mainContainer {
+        .products_contentContainer {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            grid-template-areas: 
+            "ptitle ptitle"
+            "p1 p2"
+            "p3 p4"
+            "p5 p6"
+            "p7 p8"
+            "p9 p9";
+            .items {
+                height: 15rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px){
+    .products_mainContainer {
+        .products_contentContainer {
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            grid-template-areas: 
+            "ptitle ptitle ptitle"
+            "p1 p2 p3"
+            "p4 p5 p6"
+            "p7 p8 p9";
+            .items {
+                height: 15rem;
+                
             }
         }
     }

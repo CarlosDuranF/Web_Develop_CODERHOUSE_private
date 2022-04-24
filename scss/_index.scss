@@ -22,16 +22,14 @@
     .home_infoImg {
         display: grid;
         grid-template-columns: 1fr;
-        justify-items: center;
+        justify-items: stretch;
         grid-template-areas: 
         "img1"
         "img2"
         "img3";
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px 40px 20px 40px;
         gap: 5px;
         .info_category {
-            width: 40%;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;

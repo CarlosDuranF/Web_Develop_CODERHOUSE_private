@@ -1,10 +1,80 @@
 .products_mainContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
     .products_contentContainer {
-
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: stretch;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 10px;
+        grid-template-areas:
+        "ptitle" 
+        "p1"
+        "p2"
+        "p3"
+        "p4"
+        "p5"
+        "p6"
+        "p7"
+        "p8"
+        "p9";
+        h2#productTitle {
+            text-align: center;
+            padding-bottom: 10px;
+            grid-area: ptitle;
+        }
+        .items {
+            display: grid;
+            justify-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 10rem;
+            align-items: center;
+            border-radius: 2px;
+            a {
+                background: rgba(0, 0, 0, 0.6);
+                width: 35%;
+                text-align: center;
+                border-radius: 3px;
+            }
+        }
+        .items#food {
+            background-image: url("../img/products/comida.jpg");
+            grid-area: p1;
+        }
+        .items#toys {
+            background-image: url("../img/products/juguete.jpg");
+            grid-area: p2;
+        }
+        .items#clothes {
+            background-image: url("../img/products/ropa.jpg");
+            grid-area: p3;
+        }
+        .items#beed {
+            background-image: url("../img/products/cama.jpg");
+            grid-area: p4;
+        }
+        .items#harness {
+            background-image: url("../img/products/arnes.jpeg");
+            grid-area: p5;
+        }
+        .items#transport {
+            background-image: url("../img/products/jaula.jpg");
+            grid-area: p6;
+        }
+        .items#hygiene {
+            background-image: url("../img/products/higiene.png");
+            grid-area: p7;
+        }
+        .items#outdoor {
+            background-image: url("../img/products/outdoor.jpg");
+            grid-area: p8;
+        }
+        .items#indoor {
+            background-image: url("../img/products/indor.jpg");
+            grid-area: p9;
+        }
     }
 }
