@@ -185,6 +185,7 @@ footer .footer_Info {
       grid-area: img3; }
 
 /* FIN INDEX.HTML */
+/* IINICIO PRODUCTS.HTML  */
 .products_mainContainer .products_contentContainer {
   display: grid;
   grid-template-columns: 1fr;
@@ -241,6 +242,7 @@ footer .footer_Info {
     background-image: url("../img/products/indor.jpg");
     grid-area: p9; }
 
+/* FIN PRODUCTS.HTML */
 /* INICIO MEDIA QUERY */
 @media screen and (max-width: 506px) {
   footer .footer_Info {
