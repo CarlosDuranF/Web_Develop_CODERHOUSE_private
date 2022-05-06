@@ -1,7 +1,9 @@
+@import "maps";
 /* INICIO INDEX.HTML */
 .home_mainContainer {
     margin-left: 10px;
     margin-right: 10px;
+    background-color: map-get($grayscale, 800);
     .home_bannerImg {
         width: 100%;
         height: 91vh;
@@ -17,6 +19,7 @@
             text-align: center;
             width: 100%;
             font-size: 2rem;
+            
         }
     }
     .home_infoImg {

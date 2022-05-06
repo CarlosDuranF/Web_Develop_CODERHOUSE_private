@@ -1,0 +1,10 @@
+@import "mixin";
+
+.service_mainContainer {
+    .service_contentContainer {
+        @include configItem;
+        h2#serviceTitle {
+            @include configTittle;
+        }
+    }
+}

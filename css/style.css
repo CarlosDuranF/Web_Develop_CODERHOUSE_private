@@ -143,7 +143,8 @@ footer .footer_Info {
 /* INICIO INDEX.HTML */
 .home_mainContainer {
   margin-left: 10px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  background-color: #4A4C4F; }
   .home_mainContainer .home_bannerImg {
     width: 100%;
     height: 91vh;
@@ -250,6 +251,19 @@ footer .footer_Info {
     grid-area: p9; }
 
 /* FIN PRODUCTS.HTML */
+.service_mainContainer .service_contentContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: stretch;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  gap: 10px; }
+  .service_mainContainer .service_contentContainer h2#serviceTitle {
+    text-align: center;
+    padding-bottom: 10px; }
+
 /* INICIO MEDIA QUERY */
 @media screen and (max-width: 506px) {
   footer .footer_Info {
