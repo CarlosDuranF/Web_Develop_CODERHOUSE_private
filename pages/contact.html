@@ -46,39 +46,18 @@
         </nav>
     </header>
 
-    <main class="about_mainContainer">
-        <section class="about_bannerImg">
-            <h2>A tu servicio</h2>
-        </section>    
-        <section class="about_text" id="text">
-            <h2>Nosotros</h2>
-            <p>
-                Como organización queremos abarcar la mayor cantidad de servicios para el bienestar de tu mascota, 
-                ya que son una parte importante en nuestras vidas, es por eso que estamos posicionados en toda Latinoamérica
-                con el fin de entregar el mejor servicio.
-            </p>
-            <p>
-                Estamos en constante renovación de equipamiento y servicios ajustandonos a las necesidades de nuestros clientes.
-            </p>
-        </section>
-        <section class="about_community" id="community">
-            <h2>Comunidad</h2>
-            <p>
-                Cuando no podemos llegar con nuestras sucursales en los diferentes puntos de la region,
-                contamos con alianzas de servicios veterinarios y productos dando fe que cumplen con la misma calidad
-                la cual brindamos como organización, generando ofertas atractivas teniendo en cuenta que nuestros servicios
-                esten disponibles a todos nuestros clientes.
-            </p>
-        </section>
-        <section class="about_foundation" id="foundation">
-            <h2>Fundación</h2>
-            <p>
-                Nos importa llegar a todos nuestros amigos por los medios que sean, es por eso que contamos con la fundacion "Cruz cafe",
-                desplegados en toda Latinoamérica brindamos comida, refugio y salud a la mayor cantidad de animales abandonados que podamos,
-                pero para poder abarcar cada vez mas necesitamos de tu apoyo, puedes donar tanto de forma monetaria como en forma de productos,
-                a su vez necesitamos apoyo constante para encontrar hogares de adopcion para nuestros amigos abandonados.
-            </p>
-        </section>
+    <main class="contact_mainContainer">
+        <form action="" class="contact__form">
+            <h2>Contactanos</h2>
+            <input type="text" name="nombre" placeholder="Nombre*" required>
+            <input type="text" name="apellido" placeholder="Apellido*" required>
+            <input type="email" name="email" placeholder="Email*" required>
+            <textarea name="mensaje" placeholder="Mensaje" cols="30" rows="10"></textarea>
+            <div class="contact__form--buttonsContainer">
+              <button type="reset" class="button button__reset">Limpiar</button>
+              <button type="submit" class="button buttton__submit">Enviar</button>
+            </div>
+        </form> 
     </main>
 
     <footer>
@@ -103,5 +82,6 @@
             </section>
           </div>
     </footer>
+    <!-- Bootstrap Scripts -->
 </body>
 </html>
