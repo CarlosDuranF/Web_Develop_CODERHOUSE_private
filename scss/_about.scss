@@ -1,0 +1,60 @@
+.about_mainContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+    .about_bannerImg {
+        width: 100%;
+        height: 91vh;
+        background-image: url("../img/about/servicios-2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            width: 100%;
+            font-size: 2rem;
+        }
+    }
+    .about_text {
+        font-size: 2rem;
+        text-align: justify;
+        padding: 10px 20px 10px 20px;
+        h2 {
+            text-align: center;
+        }
+        p {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+    }
+    .about_community {
+        font-size: 2rem;
+        text-align: justify;
+        padding: 10px 20px 10px 20px;
+        h2 {
+            text-align: center;
+        }
+        p {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+    }
+    .about_foundation {
+        font-size: 2rem;
+        text-align: justify;
+        padding: 10px 20px 10px 20px;
+        h2 {
+            text-align: center;
+        }
+        p {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+    }
+}

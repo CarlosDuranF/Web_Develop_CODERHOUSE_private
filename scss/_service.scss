@@ -3,8 +3,29 @@
 .service_mainContainer {
     .service_contentContainer {
         @include configItem;
+        grid-template-areas:
+        "ptitle" 
+        "p1"
+        "p2"
+        "p3";
         h2#serviceTitle {
             @include configTittle;
+            grid-area: ptitle;
+        }
+        .items {
+            @include configItemServices;
+        }
+        .items#esthetic {
+            background-image: url('../img/services/peluqueria.jpg');
+            grid-area: p1;
+        }
+        .items#training {
+            background-image: url('../img/services/entrenamiento.jpg');
+            grid-area: p2;
+        }
+        .items#vet {
+            background-image: url('../img/services/veterinario.webp');
+            grid-area: p3;
         }
     }
 }

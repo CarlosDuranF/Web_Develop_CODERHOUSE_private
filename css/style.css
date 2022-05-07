@@ -143,8 +143,7 @@ footer .footer_Info {
 /* INICIO INDEX.HTML */
 .home_mainContainer {
   margin-left: 10px;
-  margin-right: 10px;
-  background-color: #4A4C4F; }
+  margin-right: 10px; }
   .home_mainContainer .home_bannerImg {
     width: 100%;
     height: 91vh;
@@ -259,10 +258,81 @@ footer .footer_Info {
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  gap: 10px; }
+  gap: 10px;
+  grid-template-areas: "ptitle"  "p1" "p2" "p3"; }
   .service_mainContainer .service_contentContainer h2#serviceTitle {
     text-align: center;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    grid-area: ptitle; }
+  .service_mainContainer .service_contentContainer .items {
+    display: grid;
+    justify-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 10rem;
+    align-items: center;
+    border-radius: 2px; }
+    .service_mainContainer .service_contentContainer .items a {
+      background: rgba(0, 0, 0, 0.6);
+      width: 35%;
+      text-align: center;
+      border-radius: 3px; }
+  .service_mainContainer .service_contentContainer .items#esthetic {
+    background-image: url("../img/services/peluqueria.jpg");
+    grid-area: p1; }
+  .service_mainContainer .service_contentContainer .items#training {
+    background-image: url("../img/services/entrenamiento.jpg");
+    grid-area: p2; }
+  .service_mainContainer .service_contentContainer .items#vet {
+    background-image: url("../img/services/veterinario.webp");
+    grid-area: p3; }
+
+.about_mainContainer {
+  margin-left: 10px;
+  margin-right: 10px; }
+  .about_mainContainer .about_bannerImg {
+    width: 100%;
+    height: 91vh;
+    background-image: url("../img/about/servicios-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .about_mainContainer .about_bannerImg h2 {
+      background: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      width: 100%;
+      font-size: 2rem; }
+  .about_mainContainer .about_text {
+    font-size: 2rem;
+    text-align: justify;
+    padding: 10px 20px 10px 20px; }
+    .about_mainContainer .about_text h2 {
+      text-align: center; }
+    .about_mainContainer .about_text p {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  .about_mainContainer .about_community {
+    font-size: 2rem;
+    text-align: justify;
+    padding: 10px 20px 10px 20px; }
+    .about_mainContainer .about_community h2 {
+      text-align: center; }
+    .about_mainContainer .about_community p {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  .about_mainContainer .about_foundation {
+    font-size: 2rem;
+    text-align: justify;
+    padding: 10px 20px 10px 20px; }
+    .about_mainContainer .about_foundation h2 {
+      text-align: center; }
+    .about_mainContainer .about_foundation p {
+      padding-top: 10px;
+      padding-bottom: 10px; }
 
 /* INICIO MEDIA QUERY */
 @media screen and (max-width: 506px) {
@@ -335,6 +405,12 @@ footer .footer_Info {
     align-items: center;
     grid-template-areas: "ptitle ptitle" "p1 p2" "p3 p4" "p5 p6" "p7 p8" "p9 p9"; }
     .products_mainContainer .products_contentContainer .items {
+      height: 15rem; }
+  .service_mainContainer .service_contentContainer {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-template-areas: "ptitle ptitle" "p1 p2" "p3 p3"; }
+    .service_mainContainer .service_contentContainer .items {
       height: 15rem; } }
 
 @media screen and (min-width: 992px) {
@@ -343,6 +419,12 @@ footer .footer_Info {
     align-items: center;
     grid-template-areas: "ptitle ptitle ptitle" "p1 p2 p3" "p4 p5 p6" "p7 p8 p9"; }
     .products_mainContainer .products_contentContainer .items {
+      height: 15rem; }
+  .service_mainContainer .service_contentContainer {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-template-areas: "ptitle ptitle ptitle" "p1 p2 p3"; }
+    .service_mainContainer .service_contentContainer .items {
       height: 15rem; } }
 
 /* FIN MEDIA QUERY */

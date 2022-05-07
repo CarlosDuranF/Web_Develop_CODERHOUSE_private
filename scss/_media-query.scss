@@ -123,6 +123,19 @@
             }
         }
     }
+    .service_mainContainer {
+        .service_contentContainer {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            grid-template-areas: 
+            "ptitle ptitle"
+            "p1 p2"
+            "p3 p3";
+            .items {
+                height: 15rem;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -135,6 +148,19 @@
             "p1 p2 p3"
             "p4 p5 p6"
             "p7 p8 p9";
+            .items {
+                height: 15rem;
+                
+            }
+        }
+    }
+    .service_mainContainer {
+        .service_contentContainer {
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            grid-template-areas: 
+            "ptitle ptitle ptitle"
+            "p1 p2 p3";
             .items {
                 height: 15rem;
                 
